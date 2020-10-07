@@ -3,6 +3,8 @@ import Foundation
 
 let startTime1 = CFAbsoluteTimeGetCurrent()
 var strArray1 = ["a","b","c","d","z","y"]
+
+print("Input array: \(strArray1)")
 var num1 = 2
 for i in 0..<strArray1.count{
     
@@ -16,6 +18,7 @@ for i in 0..<strArray1.count{
     strArray1[i] = String(UnicodeScalar(newAValue)!)
 }
 
+print("Result Array:\(strArray1)")
 
 let timeElapsed1 = CFAbsoluteTimeGetCurrent() - startTime1
 print("Time elapsed: \(timeElapsed1) s.")
@@ -24,9 +27,13 @@ print("Time elapsed: \(timeElapsed1) s.")
 
 
 
+
+
 let startTime = CFAbsoluteTimeGetCurrent()
 
 var strArray = ["a","b","c","d","z","y"]
+
+print("Input array: \(strArray)")
 var num = 2
 var dictionaryOfAlphabets = [Character:Int]()
 var dictionaryOfNumbers = [Int:Character]()
@@ -48,6 +55,7 @@ for i in 0..<strArray.count {
     strArray[i] = String(dictionaryOfNumbers[position!]!)
     
 }
+print("Result Array:\(strArray)")
 
 
 let timeElapsed = CFAbsoluteTimeGetCurrent() - startTime
